@@ -1,0 +1,187 @@
+#popbox
+{
+}
+#popbox .pop_box_bg
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100vh;
+	background:#0000009b;
+	opacity:0;
+	visibility:hidden;
+	transition:0.4s;
+}
+#popbox .pop_box_bg .pop_box
+{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%) scale(0.5);
+	width:300px;
+	height:200px;
+	box-shadow:3px 3px 10px 2px #000;
+	border-radius:3px;
+	overflow:hidden;
+	background:#fff;
+	visibility:hidden;
+	transition:0.3s;
+}
+#popbox .pop_box_bg .pop_box .pop_head
+{     
+	background:#f00;
+	height:45px;
+}
+#popbox .pop_box_bg .pop_box .pop_head h2
+{
+	border:px solid;
+	text-align:center;
+	line-height:44px;
+	color:#fff;
+	letter-spacing:0.5px;
+	font-size:18px;
+}
+#popbox .pop_box_bg .pop_box .pop_head p
+{
+	/*border:1px solid;*/
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+#popbox .pop_box_bg .pop_box .pop_head a
+{
+	/*border:1px solid;*/
+	width:60px;
+	height:45px;
+	float: left;
+	display: block;
+	text-align:center;
+	font-size:25px;
+	transition:0.3s;
+}
+#popbox .pop_box_bg .pop_box .pop_head a i
+{
+	line-height:42px;
+}
+#popbox .pop_box_bg .pop_box .pop_head a:hover
+{
+	color:#000;
+}
+
+				/******* VIEW *********/
+
+#popbox #show:target
+{
+	visibility:visible;
+	opacity:1;
+}
+#popbox #show:target .pop_box
+{
+	visibility:visible;
+	opacity:1;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%) scale(1);
+}			
+#popbox .pop_box_bg .pop_box#show
+{
+	width:1000px;
+	height:630px;
+}
+#popbox .pop_box_bg .pop_box#show .show
+{
+	border:1px solid;
+	width:100%;
+	height:580px;
+	overflow-y: scroll;
+	margin-top: 3px;
+}
+#popbox .pop_box_bg .pop_box#show .show hr
+{
+	margin: 5px 20px;
+}
+#popbox .pop_box_bg .pop_box#show .show .head
+{
+	/*border:1px solid;*/
+}
+
+
+
+#popbox .pop_box_bg .pop_box#show .show .head .img
+{
+	/*border:1px solid;*/
+	width:98%;height:160px;margin: 10px auto;
+}
+#popbox .pop_box_bg .pop_box#show .show .head .img img
+{
+	width:100%;height:100%; 
+}
+
+#popbox .pop_box_bg .pop_box#show .show .head .title
+{
+	border:px solid;margin: 10px auto;width:98%;
+}
+#popbox .pop_box_bg .pop_box#show .show .head .title h1
+{
+	border:px solid;text-align: center;font-size: 25px;padding:10px 0px;background: #000;color:#fff;letter-spacing: 1.5px; 
+}
+#popbox .pop_box_bg .pop_box#show .show .body
+{
+	/*border:1px solid red;*/
+}
+#popbox .pop_box_bg .pop_box#show .show .body div
+{
+	/*border:1px solid;*/
+	width: 90%;
+	height:20px;
+	margin: 30px auto;
+	position: relative;
+}
+#popbox .pop_box_bg .pop_box#show .show .body div p
+{
+	/*border:1px solid;*/
+	width: 200px;
+	position: absolute;
+}
+#popbox .pop_box_bg .pop_box#show .show .body div p:nth-child(1)
+{
+	/*float: left;*/
+	left: 20px;
+}
+#popbox .pop_box_bg .pop_box#show .show .body div p:nth-child(2)
+{
+	/*float: right;*/
+	right: 20px;text-align: right;
+}
+#popbox .pop_box_bg .pop_box#show .show .body table
+{
+	border:px solid;
+	width: 90%;
+	margin:20px auto;
+	letter-spacing: 1px;
+	border-collapse:collapse;
+}
+#popbox .pop_box_bg .pop_box#show .show .body table tr
+{
+	height:38px; 
+}
+#popbox .pop_box_bg .pop_box#show .show .body table tr td:nth-child(1)
+{
+
+	width: 250px;
+}
+#popbox .pop_box_bg .pop_box#show .show .body table tr td
+{
+	/*padding:0px 15px;*/
+}
+
+#popbox .pop_box_bg .pop_box#show .show .footer
+{
+	/*border:1px solid pink;*/
+}
+#popbox .pop_box_bg .pop_box#show .show .footer p
+{
+	text-align: center;letter-spacing: 0.8px;font-size: 10px;margin: 20px;
+}
